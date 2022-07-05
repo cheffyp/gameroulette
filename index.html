@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Game Roulette</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      id="gameInputForm"
+      name="gameInputForm"
+      class="d-flex justify-content-center align-self-center pt-5"
+    >
+      <form>
+        <h3>Please enter your games separated by a space:</h3>
+        <textarea
+          id="gameinput"
+          name="gameinput"
+          cols="50"
+          rows="10"
+        ></textarea>
+        <br />
+        <br />
+        <button type="button" class="btn btn-primary" onclick="pickGame()">
+          Submit
+        </button>
+        <br />
+        <br />
+        <div id="gameDisplay" name="gameDisplay">
+          <h5 id="gameDisplayText" name="gameDisplayText"></h5>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
